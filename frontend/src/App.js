@@ -9,9 +9,9 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 function App() {
   return (
-    <>
+    <div className="app-container">
       <Navbar />
-      <div className="container mt-4">
+      <div className="main-content container mt-4">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
@@ -20,8 +20,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-      <Footer />
-    </>
+      <Footer/>
+    </div>
   );
 }
 
