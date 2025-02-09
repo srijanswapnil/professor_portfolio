@@ -1,34 +1,30 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 
 const About = () => {
-  const [about, setAbout] = useState(null);
-
-  useEffect(() => {
-    axios.get("http://localhost:5000/api/about")
-      .then(response => setAbout(response.data))
-      .catch(error => console.error("Error fetching about info:", error));
-  }, []);
-
-  if (!about) return <p>Loading...</p>;
+  const about = {
+    name: "Dr. John Doe",
+    title: "Professor of Computer Science",
+    image: "https://via.placeholder.com/120",
+    bio: "Dr. John Doe is a renowned professor specializing in Artificial Intelligence and Machine Learning with over 20 years of research and teaching experience.",
+    researchInterests: ["Deep Learning", "Natural Language Processing", "Computer Vision"],
+    experience: "Professor at XYZ University since 2005, with prior research at ABC Institute.",
+  };
 
   return (
-    <div className="app-container mt-5">
-      <h2 className="text-center text-primary">About the Professor</h2>
-      <div className="card shadow p-4">
-        <div className="text-center">
-          <img src={about.image} alt={about.name} className="profile-image" />
-          <h3>{about.name}</h3>
-          <h5 className="text-muted">{about.title}</h5>
-        </div>
+    <div className="container mt-5 text-center">
+      <h2 className="text-primary fw-bold">About the Professor</h2>
+      <div className="card shadow-lg p-4">
+        <img src={about.image} alt={about.name} className="rounded-circle mb-3" width="120" />
+        <h3 className="fw-bold">{about.name}</h3>
+        <h5 className="text-muted">{about.title}</h5>
         <p className="mt-3">{about.bio}</p>
-        <h4>Research Interests</h4>
-        <ul>
+        <h4 className="mt-4">Research Interests</h4>
+        <ul className="list-group">
           {about.researchInterests.map((interest, index) => (
-            <li key={index}>{interest}</li>
+            <li key={index} className="list-group-item">{interest}</li>
           ))}
         </ul>
-        <h4>Experience</h4>
+        <h4 className="mt-4">Experience</h4>
         <p>{about.experience}</p>
       </div>
     </div>

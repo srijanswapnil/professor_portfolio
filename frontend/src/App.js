@@ -13,10 +13,11 @@ import ManageResearch from "./pages/admin/ManageResearch";
 import ManageAchievements from "./pages/admin/ManageAchievements";
 import ManageBlogs from "./pages/admin/ManageBlogs";
 import ManageAwards from "./pages/admin/ManageAwards";
-import ManageCollaborators from "./pages/admin/ManageCollaborators";
 import SearchResults from "./pages/SearchResults";
 import About from "./pages/About";
 import AdminProjects from "./pages/AdminProjects";
+import Experience from "./pages/Experience";
+import Award from './pages/Award'
 function App() {
   return (
     <>
@@ -33,10 +34,12 @@ function App() {
         <Route path="/admin/achievements" element={<ManageAchievements />} />
         <Route path="/admin/blogs" element={<ManageBlogs />} />
         <Route path="/admin/awards" element={<ManageAwards />} />
-        <Route path="/admin/collaborators" element={<ManageCollaborators />} />
         <Route path="/search" element={<SearchResults />} />
         <Route path="/about" element={<About />} />
         <Route path="/admin-projects" element={<AdminProjects />} />
+        <Route path="/experience" element={<Experience/>} />
+        <Route path="/award" element={<Award />} />
+
       </Routes>
       <Footer />
     </>

@@ -19,17 +19,37 @@ const achievements = [
     organization: "International AI Association",
     description: "Ranked among the top 10 researchers in data science worldwide.",
   },
+  {
+    title: "Excellence in Teaching",
+    year: 2022,
+    organization: "NIT Jamshedpur",
+    description: "Recognized for innovative teaching methodologies.",
+  },
+  {
+    title: "Excellence in Teaching",
+    year: 2022,
+    organization: "NIT Jamshedpur",
+    description: "Recognized for innovative teaching methodologies.",
+  },
+  {
+    title: "Excellence in Teaching",
+    year: 2022,
+    organization: "NIT Jamshedpur",
+    description: "Recognized for innovative teaching methodologies.",
+  }
 ];
 
 export default function Achievements() {
   return (
     <div className="app-container container mt-5">
-      <h2 className="text-center mb-4">Achievements & Awards</h2>
+      <h2 className="text-center mb-4 text-warning fw-bold">
+        🏆 Achievements & Awards
+      </h2>
       <div className="row">
         {achievements.map((achievement, index) => (
           <div key={index} className="col-md-4">
-            <div className="card mb-4 shadow-sm">
-              <div className="card-body">
+            <div className="card mb-4 shadow-lg achievement-card">
+              <div className="card-body text-center">
                 <h5 className="card-title text-primary">{achievement.title}</h5>
                 <h6 className="card-subtitle mb-2 text-muted">
                   {achievement.organization} - {achievement.year}
@@ -43,3 +63,4 @@ export default function Achievements() {
     </div>
   );
 }
+

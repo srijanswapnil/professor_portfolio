@@ -67,9 +67,8 @@ export default function Navbar() {
                 <hr className="dropdown-divider"/>
                 <li><Link className="dropdown-item" to="/experience">Experience</Link></li>
                 <hr className="dropdown-divider"/>
-                <li><Link className="dropdown-item" to="/awards">Awards</Link></li>
+                <li><Link className="dropdown-item" to="/award">Award</Link></li>
                 <hr className="dropdown-divider"/>
-                <li><Link className="dropdown-item" to="/collaborators">Collaborators</Link></li>
               </ul>
             </li>
 

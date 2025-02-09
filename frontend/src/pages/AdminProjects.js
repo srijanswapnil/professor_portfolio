@@ -43,7 +43,7 @@ const AdminProjects = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="app-container mt-5">
       <h2 className="text-center">Admin - Manage Projects</h2>
 
       {/* Form to Add/Edit Projects */}
