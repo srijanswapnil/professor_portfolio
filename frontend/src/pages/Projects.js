@@ -20,7 +20,7 @@ const projectsData = [
 
 export default function Projects() {
   return (
-    <div className="container mt-5">
+    <div className="app-container container mt-5">
       <h2 className="text-center mb-4">Projects</h2>
       <div className="row">
         {projectsData.map((project, index) => (

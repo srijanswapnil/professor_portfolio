@@ -23,7 +23,7 @@ const achievements = [
 
 export default function Achievements() {
   return (
-    <div className="container mt-5">
+    <div className="app-container container mt-5">
       <h2 className="text-center mb-4">Achievements & Awards</h2>
       <div className="row">
         {achievements.map((achievement, index) => (

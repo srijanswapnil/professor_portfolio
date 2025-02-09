@@ -26,7 +26,7 @@ const researchPapers = [
 
 export default function Research() {
   return (
-    <div className="container mt-5">
+    <div className="app-container container mt-5">
       <h2 className="text-center mb-4">Research Papers</h2>
       <div className="table-responsive">
         <table className="table table-bordered table-striped">

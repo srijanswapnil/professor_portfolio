@@ -27,7 +27,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="home-container">
+    <div className="app-container home-container">
       <div className="hero-section">
         <Fade direction="down" duration={1500}>
           <h1 ref={titleRef} className="hero-title">
